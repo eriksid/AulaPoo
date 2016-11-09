@@ -10,8 +10,19 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <pre>
         <?php
-        // put your code here
+        require_once 'Mamifero.php';
+        $gato = new Mamifero;
+        $gato->setIdade(2);
+        $gato->setPeso(1);
+        $gato->setCordopelo("branco");
+        $gato->alimentar();
+        $gato->locomover();
+        $gato->emitirsom();
+        
+        print_r($gato);
         ?>
+        </pre>
     </body>
 </html>

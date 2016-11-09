@@ -13,4 +13,13 @@ class Mamifero extends Animal {
     public function emitirsom() {
         print "<p>som de mamifero</p>";
     }
+    function getCordopelo() {
+        return $this->cordopelo;
+    }
+
+    function setCordopelo($cordopelo) {
+        $this->cordopelo = $cordopelo;
+    }
+
+
 }
